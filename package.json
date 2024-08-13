@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:mosh": "node dist/mosh/server/server.mjs",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "deploy:gh": "ng build -c production --base-href 'https://theRealAceCorban.github.io/mosh/' && ngh --dir=dist/mosh/browser"
   },
   "private": true,
   "dependencies": {
