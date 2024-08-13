@@ -63,9 +63,9 @@ import { AppErrorHandler } from './common/app-error-handler';
     HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: '/followers/:username/:id', component: ProfileComponent },
-      { path: '/followers', component: FollowersComponent },
-      { path: '/posts', component: PostsComponent },
+      { path: 'followers/:username/:id', component: ProfileComponent },
+      { path: 'followers', component: FollowersComponent },
+      { path: 'posts', component: PostsComponent },
       { path: '**', component: NotFoundComponent }
       ])
   ],
