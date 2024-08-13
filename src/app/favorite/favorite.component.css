@@ -1,0 +1,14 @@
+.favorite {
+	font-size:3em;
+	cursor:pointer;
+	color:#cccccc;
+}
+
+.favoriteSelected{
+	color:pink;
+}
+
+span
+{
+	font-size:3em;
+}

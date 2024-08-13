@@ -1,0 +1,12 @@
+<div class="zippy card">
+	<div class="card-header" (click)="toggleOpen()">		
+		<h4><span class="toggleBtn" [ngClass]="{
+			'bi bi-chevron-right':!open,
+			'bi bi-chevron-down':open
+		}"></span> {{ title }}</h4>
+		
+	</div>
+	<div class="card-body" *ngIf="open">
+		<ng-content></ng-content>
+	</div>
+</div>

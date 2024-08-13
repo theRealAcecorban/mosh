@@ -1,0 +1,22 @@
+<h3>My Followers</h3>
+<div *ngFor="let follower of followers" class="follower">
+	<table>
+		<tbody>
+			<tr>
+				<td class="imageCell">
+					<img src="{{ follower.avatar_url }}" class="rounded-circle" />
+				</td>
+				<td class="contentCell">
+					<h5>
+						<a 
+						[routerLink]="['/followers', follower.login, follower.id]"
+						[queryParams]="{ page: 1, order: 'newest' }">{{ follower.login }}</a>
+					</h5>
+					<div>
+						<a href="{{ follower.html_url }}">{{ follower.html_url }}</a>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

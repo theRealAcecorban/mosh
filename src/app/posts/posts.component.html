@@ -1,0 +1,31 @@
+<div class="form-group">
+	<input 
+	type="text"
+	#title
+	class="form-control"
+	placeholder="Press Enter to Add New Post" 
+	(keyup.enter)="createPost(title)">
+</div>
+<ul class="list-group">
+	<li 
+		*ngFor="let post of posts"
+		class="list-group-item">
+		<button 
+		class="btn btn-primary btn-sm"
+		(click)="getPost(post)">
+			<i class="bi bi-search"></i>
+		</button>
+		<button 
+		class="btn btn-success btn-sm"
+		(click)="updatePost(post)">
+			<i class="bi bi-pencil-square"></i>
+		</button>
+		<button 
+		class="btn btn-danger btn-sm"
+		(click)="deletePost(post)">
+			<i class="bi bi-trash"></i>
+		</button>
+		<span style="display:inline-block; width: 3em; padding:0 1em; margin-right: 1em; border-right:1px solid #ccc;">{{ post.id }}</span>
+		<span>{{ post.title }}</span>
+	</li>
+</ul>

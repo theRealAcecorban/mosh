@@ -1,0 +1,17 @@
+.follower img {
+	width:120px;
+	height:120px;
+}
+
+.follower table {
+	margin-bottom:3em;
+}
+
+.follower .imageCell {
+	width:10%;
+}
+
+.follower .contentCell {
+	vertical-align: top;
+	padding-left:2em;
+}
